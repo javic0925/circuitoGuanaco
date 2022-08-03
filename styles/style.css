@@ -82,4 +82,13 @@ body {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
+}
+.aside ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aside ul li img {
+  height: 32px;
+  width: auto;
 }/*# sourceMappingURL=style.css.map */

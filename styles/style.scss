@@ -89,4 +89,14 @@ body {
         align-items: center;
         list-style: none;
     }
+
+    ul{
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{height: 32px;
+            width: auto;}
+        }
+    }
 }
