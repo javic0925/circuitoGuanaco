@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="./nav.js"></script>
+    <script src="./player.js"></script>
     <title>Circuito Guanaco</title>
 </head>
 <body>
@@ -15,19 +22,36 @@
     </section>
     <section class="main">
         <div id="logo"><img src="./Assets/Imgs/FIN2.png" alt=""></div>
-        <div id="playerButton"><audio controls src="https://hos.hostkachete.com:9059/index.html%3Fsid%3D1"></audio></div>
+        <div id="radioPlayer">
+                <div id="player">
+                <span id="playback" class="fa fa-play fa-lg"></span>
+                </div>
+            </div>
+            <audio preload="none" src="https://hos.hostkachete.com:9059/index.html%3Fsid%3D1">
+            <source id="sourceOgg" type="audio/ogg">
+            <source id="sourceMp3" type="audio/mpeg">
+            </audio>
+            </div>
     </section>
     <section class="aside">
         <div id="listIcons">
             <ul>
                 <li><img src="./Assets/Icons/iconmonstr-telegram-4-32.png" alt=""></li>
-                <li><img src="./Assets/Icons/iconmonstr-speech-bubble-5-32.png" alt=""></li>
+                <li><img onclick="openChat();" src="./Assets/Icons/iconmonstr-speech-bubble-5-32.png" alt=""></li>
                 <li><img src="./Assets/Icons/iconmonstr-whatsapp-4-32.png" alt=""></li>
                 <li><img src="./Assets/Icons/iconmonstr-facebook-messenger-4-32.png" alt=""></li>
                 <li><img src="./Assets/Icons/iconmonstr-instagram-14-32.png" alt=""></li>
                 
             </ul>
         </div>
+    </section>
+    <section id="lounge">
+        <div id="menuLounge">
+            <div id="menu"><img id="headerUndo" onclick="closeChat();" src="./Assets/Icons/./iconmonstr-undo-1-32.png" alt=""></div>
+        <div id="name"><h3>Circuito Guanaco</h3></div>
+        <div id="share"><img id="headerMenu" src="./Assets/Icons/iconmonstr-share-3-32.png" alt=""></div>
+        </div>
+        <iframe src="https://www3.cbox.ws/box/?boxid=3519328&boxtag=Ag5ztB" width="100%" height="93%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
     </section>
 </body>
 </html>

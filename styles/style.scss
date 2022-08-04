@@ -1,3 +1,5 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #1B2845;
-    overflow: hidden;
+
 }
 
 .header {
@@ -33,7 +35,7 @@ body {
 
 }
 
-#headerMenu {
+#headerMenu,#headerUndo {
     height: 2rem;
 }
 
@@ -50,7 +52,7 @@ body {
 }
 
 #logo,
-#playerButton {
+#radioPlayer{
     width: 100%;
     height: 50%;
     display: flex;
@@ -99,4 +101,35 @@ body {
             width: auto;}
         }
     }
+}
+
+#playback {
+    color: #e9e9e9;
+    pointer-events: initial;
+    text-shadow: 0 0 3rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .fa-lg {
+    font-size: 5rem;
+  }
+
+  #lounge{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    overflow: hidden;
+    transition: 0.5s;
+
+  }
+
+  #menuLounge{
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    background-color: #1B2845;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
