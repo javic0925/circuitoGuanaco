@@ -57,6 +57,10 @@ body {
   align-items: center;
 }
 
+#radioPlayer {
+  justify-content: flex-start;
+}
+
 .cc_streaminfo {
   color: white;
 }
