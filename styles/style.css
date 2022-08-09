@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Share Tech Mono", monospace;
 }
 
 html {
@@ -14,6 +13,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #1B2845;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .header {
@@ -108,7 +108,7 @@ body {
   align-items: center;
 }
 .aside ul li img {
-  height: 32px;
+  height: 2rem;
   width: auto;
 }
 
@@ -136,7 +136,7 @@ body {
   width: 100vw;
   height: 7vh;
   display: flex;
-  background-color: #1B2845;
+  background-color: #101829;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
