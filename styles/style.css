@@ -93,6 +93,7 @@ body {
   transform: translateY(-45%);
   display: flex;
   justify-content: center;
+  padding-left: 0.2rem;
 }
 .aside ul {
   height: 100%;
@@ -108,7 +109,7 @@ body {
   align-items: center;
 }
 .aside ul li img {
-  height: 2rem;
+  height: 1.5rem;
   width: auto;
 }
 
